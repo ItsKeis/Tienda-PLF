@@ -1,0 +1,160 @@
+
+@import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+*{
+    box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6{
+   font-family: 'Merriweather', serif;
+   letter-spacing: 1px;
+}
+/*h2{
+    border-radius: #93C3C3 5px solid;
+}*/
+body{
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+img{
+    display: block;
+    max-width: 100%
+}
+.section__titulo{
+    text-align: center;
+    font-size: 40px;
+    color: #6C6A6B;
+}
+
+/*Estilos del header */
+.header{
+    height: 60px;
+}
+.header .contenedor{
+    display: flex;
+    justify-content: space-between;
+}
+.logo, icon-menu{
+    margin: 20px;
+    color: white;
+}
+.logo{
+    font-size: 45px;
+}
+.icon-menu{
+    display: block;
+/*    width: 40px;
+    height: 40px;*/
+    font-size: 50px;
+    background: transparent;
+    color: white;
+    text-align: center;
+    line-height: 100px;
+    border-radius: 5px;
+    margin: 10px;
+    margin-left:50px;
+    cursor: pointer;
+}
+/*Estilos del menu*/
+.nav{
+    position: absolute;
+    top:60px;
+    left: -100%;
+    width: 100%;
+    transition:all 0.4s;
+}
+.menu{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.menu__link{
+    display: block;
+    padding: 15px;
+    background: #DAD2CF;
+    opacity: .95;
+    text-decoration: none;
+    color: white;
+    border-style: hidden;
+    font-size: 20px;
+}
+.menu__link:hover, .select{
+    background: white;
+    color: black;
+}
+.mostrar{
+    left: 0;
+}
+
+/*Estilos del banner*/
+
+.banner{
+    margin-top: -60px;
+    position: relative;
+    z-index: -1000;
+    margin-bottom: 10px;
+}
+.banner__titulo{
+    font-size: 40px;
+    color: white;
+    text-shadow:-1px .1px 2px #496F01;
+}
+.banner .contenedor{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 100%;
+    color: Black;
+    text-align: center;
+        
+}
+.banner__txt{
+    display: none;
+}
+/*Estilos de info*/
+.info__columna{
+    background: #6C6A6B;
+    color: white;
+    padding: 15px;
+    margin-bottom: 5px;
+    margin-bottom: 30px;
+}
+/*Estilos de productos*/
+.productos__columna{
+    position: relative;
+    margin-bottom: 30px;
+}
+.producto__descripcion{
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white;
+    background: rgba (0,0,0,0.5);
+    width: 60%;
+    height: 100%;
+    padding: 5px;
+}
+.productos__titulo{
+    font-size: 25px;
+    margin: 5px 0;
+}
+/*Estilos de footer*/
+.footer{
+    background:  #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+.footer .social[class^="icon-"]{
+    display: inline-block;
+    color: #333;
+    text-decoration: none;
+    font-size: 90px;
+    padding: 10px;
+    background: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    line-height: 40px
+        
+}
